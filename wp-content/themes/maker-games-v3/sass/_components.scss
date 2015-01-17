@@ -1,0 +1,97 @@
+@import "variables";
+
+// Buttons
+
+.button {
+	background: $primary;
+	color: $white;
+	padding: .4rem 1rem;
+	border: none;
+	border-radius: 2px;
+	text-align: center;
+	transition: background-color 300ms ease-out;
+	font-weight: bold;
+	&:hover {
+		color: $white;
+		background-color: $primary-dark;
+	}
+	&.disabled {}
+	&.secondary {background: $gray-dark; &:hover {background: $gray-darkest;}}
+	&.success {background: $secondary; &:hover {background: $secondary-dark;}}
+	&.expand {width: 100%;}
+	&.outline {background: rgba(255, 255, 255, 0); border: 1px solid $white; &:hover {background-color: $primary-dark;}}
+}
+
+// Header 
+
+.text-logo img{width:30px;float:left;margin:7px 7px 0 10px;}
+.text-logo h1{color:#fff;float:left; font-family: 'Open Sans', sans-serif; font-size: 1em; text-transform: none;}
+.top-bar-section ul{float:right;}
+
+
+// Footer 
+
+footer {
+	background: $gray-light;
+	padding-top: 1.625em;
+	margin-top: 3.25em;
+	border-top: 2px solid $gray;
+	ul {
+		list-style: none;
+		margin: 0;
+		margin-bottom: 1.625em;
+	}
+	p {
+		margin-bottom: 0;
+		font-size: .8125em;
+		background: $gray-darkest;
+		font-weight: normal;
+		color: $white;
+		padding: .8125em;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+// Sidebar
+
+#sidebar {
+	margin-top: 2.7em;
+	padding-left: 1.8em;
+	border-left: 1px solid #ccc;	
+	h3 {
+		font-size: 1.2rem; line-height: 1.525em; 
+	}
+	div:first-child {
+		ul {
+			margin: 0;
+			ul {
+				list-style: none;
+				margin: 0;
+				li {
+					margin-bottom: .406rem;
+					&:first-child {margin-top: 0.406rem;}
+				}
+			}
+		}
+	}
+	div:nth-child(2) {
+		ul {
+			padding-top: 1.625em;
+			padding-bottom: .8125em;
+			margin: 0;
+			p {
+				margin-bottom: .8125em;
+			}
+		}
+	}
+}
+
+// Form Fields
+
+
+
+
+
+
+

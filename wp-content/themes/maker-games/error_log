@@ -1,0 +1,1 @@
+[29-Jul-2014 21:00:04 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home2/nathanls/public_html/makergames/wp-content/themes/maker-games/index.php on line 1
