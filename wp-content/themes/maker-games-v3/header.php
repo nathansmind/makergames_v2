@@ -46,8 +46,9 @@
 	    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		    <!--[if lt IE 9]>
 	            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	    <![endif]-->
+			<![endif]-->
 	    <?php wp_head(); ?>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri()."/js/vendor/modernizr.js" ?>"></script>
 	</head>
 	<body <?php body_class(); ?>>
 		<?php include_once("inc/analyticstracking.php") ?>

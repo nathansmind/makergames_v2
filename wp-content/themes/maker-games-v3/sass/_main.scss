@@ -37,17 +37,44 @@ article {
 	position: relative;
 	margin-bottom: 1.6em !important;
 	.postInfo {
-		position: absolute;
+		background: $gray-light;
+		position: relative;
 		bottom: 0;
-		color: $white;
-		padding: 0 1.875em .9375em;
+		color: $black;
+		padding-bottom:  .9375em;
+		padding-top:  .9375em;
+		border-bottom: 2px solid #ccc;
 		h2 {
-			color: $white;
+			color: $black;
 		}
 		p {
 			margin-bottom: 0;
 			font-style: italic;
 			font-size: .8125;
+		}
+	}
+}
+
+@media only screen and (min-width: 40.063em) {
+	.post-single {
+		position: relative;
+		margin-bottom: 1.6em !important;
+		.postInfo {
+			background: rgba(255, 255, 255, 0);
+			position: absolute;
+			bottom: 0;
+			color: $white;
+			padding-bottom:  .9375em;
+			padding-top:  0;
+			border-bottom: none;
+			h2 {
+				color: $white;
+			}
+			p {
+				margin-bottom: 0;
+				font-style: italic;
+				font-size: .8125;
+			}
 		}
 	}
 }
@@ -111,7 +138,6 @@ article {
 .home-hero {
 	background: $primary;
 	h2, h6 {color: $white;}
-	h6 {margin-bottom: 1.6em;}
 	.button { margin-top: 1.6rem;}
 }
 .slide {

@@ -1,10 +1,10 @@
 <footer>
 	<div class="row">
-		<div class="large-3 column">
+		<div class="large-3  medium-3 column">
 			<h6>Pages</h6>
 			<?php wp_nav_menu( array('menu' => 'Footer Menu' )); ?>
 		</div>
-		<div class="large-3 column">
+		<div class="large-3 medium-3 column">
 			<h6>Recent Posts</h6>
 			<ul>
 			<?php
@@ -16,7 +16,7 @@
 			?>
 			</ul>
 		</div>	
-		<div class="large-3 column">
+		<div class="large-3 medium-3 column">
 			<h6>Social</h6>
 			<ul>
 				<li><a href="#">Facebook</a></li>
@@ -24,17 +24,16 @@
 				<li><a href="#">Google Plus</a></li>
 			</ul>
 		</div>
-		<div class="large-3 column">
+		<div class="large-3 medium-3 column">
 		</div>
 	</div>
 	<p>Maker Games Copyright &copy; <?php echo date("Y") ?></p><p class='jstest'></p>
 </footer>
-<script src="<?php echo get_template_directory_uri() . '/js/foundation.min.js' ?>"></script>
 <?php wp_footer(); ?>
+<script type="text/javascript" src="<?php echo get_template_directory_uri()."/js/foundation.min.js" ?>"></script>
 <script>
 	jQuery(document).ready(function ($) {
 		$(document).foundation();
-		$('.jstest').html('JavaScript works.');
 	});
 </script>
 

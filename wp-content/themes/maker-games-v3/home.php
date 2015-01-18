@@ -7,9 +7,11 @@
 		<div class="post-single row">
 			<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark">
 				<?php if ( has_post_thumbnail() ) { /* loades the post's featured thumbnail, requires Wordpress 3.0+ */ echo '<div class="featured-thumbnail large-12 column">'; the_post_thumbnail(); echo '</div>'; } ?>
-				<div class="postInfo large-12 column">
-					<h2><?php the_title(); ?></h2>
-					<p class="date"><?php the_time('F j, Y'); ?></p>
+				<div class="large-12 column">
+					<div class="postInfo large-12 column">
+						<h2><?php the_title(); ?></h2>
+						<p class="date"><?php the_time('F j, Y'); ?></p>
+					</div>
 				</div><!--.postInfo-->
 			</a>
 		</div><!--.post-single-->
