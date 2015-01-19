@@ -145,13 +145,21 @@ article {
 		display: block; 
 		padding-bottom: 1.625em; 
 		margin: 0 auto; 
-		width: 65%;
+		width: 85%;
 		max-width: 700px;
 	}
 	&.gray-slide {background: $gray-light;}
 }
 
 
-
+// Download
+.single-3dprinters article h1{font-size:1.6875rem}
+.single-3dprinters .carousel ul{margin:0}
+.printer-tile{border:1px solid #f2f2f2;padding-top:10px;transition:border 600ms ease}
+.printer-tile:hover{border:1px solid #999}
+.printer-tile p a{color:#000}
+.printer-tile p{color:#000}
+.printer-tile h4{color:#ef4c22}
+.printer-tile .read-more{display:none}
 
 

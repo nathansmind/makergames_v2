@@ -6,7 +6,7 @@ Template Name: Style Guide
 
 
 <?php get_header(); ?>
-<div id="wrapper" class="row">
+<div id="wrapper" class="row" style="padding-top: 2.7em;">
 	<div id="wrapper" class="small-12 columns">
 		<!-- Sample Content to Plugin to Template -->
 		<h1>CSS Basic Elements</h1>

@@ -8,7 +8,7 @@
 			<h6>Recent Posts</h6>
 			<ul>
 			<?php
-				$args = array( 'numberposts' => '5' );
+				$args = array( 'numberposts' => '4' );
 				$recent_posts = wp_get_recent_posts( $args );
 				foreach( $recent_posts as $recent ){
 					echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
