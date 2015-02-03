@@ -11,6 +11,14 @@
 					<div class="postInfo large-12 column">
 						<h2><?php the_title(); ?></h2>
 						<p class="date"><?php the_time('F j, Y'); ?></p>
+						<div class="post-excerpt">
+							<?php
+							 	$myExcerpt = get_the_excerpt();
+							 	$tags = array("<p>", "</p>");
+							 	$myExcerpt = str_replace($tags, "", $myExcerpt);
+							 	echo $myExcerpt;
+							?>
+						</div><!--.post-excerpt-->
 					</div>
 				</div><!--.postInfo-->
 			</a>

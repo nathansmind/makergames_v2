@@ -44,6 +44,17 @@ article {
 		padding-bottom:  .9375em;
 		padding-top:  .9375em;
 		border-bottom: 2px solid #ccc;
+		.date {
+			color: $black;
+		}
+		.post-excerpt a, .post-excerpt p {
+			color: $black;
+			font-style: normal !important;
+		}
+		.read-more {
+			color: $primary !important;
+			&:hover {color: $primary-dark !important}
+		}
 		h2 {
 			color: $black;
 		}
@@ -56,27 +67,7 @@ article {
 }
 
 @media only screen and (min-width: 40.063em) {
-	.post-single {
-		position: relative;
-		margin-bottom: 1.6em !important;
-		.postInfo {
-			background: rgba(255, 255, 255, 0);
-			position: absolute;
-			bottom: 0;
-			color: $white;
-			padding-bottom:  .9375em;
-			padding-top:  0;
-			border-bottom: none;
-			h2 {
-				color: $white;
-			}
-			p {
-				margin-bottom: 0;
-				font-style: italic;
-				font-size: .8125;
-			}
-		}
-	}
+
 }
 
 // Posts 
@@ -153,13 +144,101 @@ article {
 
 
 // Download
-.single-3dprinters article h1{font-size:1.6875rem}
-.single-3dprinters .carousel ul{margin:0}
-.printer-tile{border:1px solid #f2f2f2;padding-top:10px;transition:border 600ms ease}
-.printer-tile:hover{border:1px solid #999}
-.printer-tile p a{color:#000}
-.printer-tile p{color:#000}
-.printer-tile h4{color:#ef4c22}
-.printer-tile .read-more{display:none}
+
+// Listing tile
+.post-type-archive-download {
+	h1 {
+		margin-bottom: 1.625rem;
+	}
+}
+
+.download-tile {
+	background: $body-background;
+	transition: background 300ms ease;
+	padding: 0.625rem !important;
+	margin-bottom: 0.625rem !important;
+	&:hover {background: $gray-light;}
+	.name {
+		margin-top: 0.625rem;
+		text-align: center;
+	}
+	.game {
+		font-family: $body-font;
+		font-weight: normal;
+		font-size: 1rem;
+		line-height: 1.625;
+		margin-bottom: 0;
+		text-transform: inherit !important;
+		height: 52px;
+		overflow: hidden;
+		text-align: center;
+	}
+}
+
+//Download single page
+.download-title {
+	padding-top: 2.7em;
+}
+.coming-soon {
+	height: 380px !important;
+	text-align: center;
+	padding: 0.9375em;
+	h4 {
+		margin-top: 30%;
+	}
+}
+.download-content {padding-top: 2.7em;}
+.download-image {
+	padding-top: 0;
+	position: relative;
+	.view-btn {
+		display: none;
+	}
+	.featured-thumbnail {
+		position: relative;
+	}
+	.model {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 95%;
+		margin-left: 0.9375em;
+		margin-right: 0.9375em;
+		background: $body-background;
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38383f', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+		div {
+			margin: 0 auto;
+			canvas {
+				border: none !important;
+			}
+		}
+	}
+}
+.featured-thumbnail {display: block;}
+.model {display: none;}
+
+
+@media only screen and (min-width: 40.063em) {
+	.view-btn {
+// 		display: inherit !important;
+		position: absolute;
+		top: 56px;
+		left: 27px;
+	}
+	.download-image {
+		padding-top: 2.7em;
+	}
+	.download-content {
+		padding-top: 0;
+	}
+}
+
+
+
+
+
+
+
+
 
 

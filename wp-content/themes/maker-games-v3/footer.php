@@ -19,9 +19,9 @@
 		<div class="large-3 medium-3 column">
 			<h6>Social</h6>
 			<ul>
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">Google Plus</a></li>
+				<li><a href="http://www.thingiverse.com/groups/maker-games">Thingiverse Group</a></li>
+				<li><a href="https://www.facebook.com/MakerGames3d">Facebook</a></li>
+				<li><a href="www.twitter.com/nathans_mind">Twitter</a></li>
 			</ul>
 		</div>
 		<div class="large-3 medium-3 column">
@@ -33,7 +33,7 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri()."/js/foundation.min.js" ?>"></script>
 <script>
 	jQuery(document).ready(function ($) {
-		$(document).foundation();
+		$(document).foundation();		
 	});
 </script>
 

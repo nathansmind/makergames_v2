@@ -1,5 +1,33 @@
 /* Theme.js */
 
+
+// Change halfscreen to fullscreen on mobile
+var mql = window.matchMedia("screen and (min-width: 600px)");
+if (mql.matches){ 
+	// if screen is larger than 600px
+    $('.slide').removeClass('fullscreen');
+    $('.slide').addClass('not-fullscreen');
+}
+else{
+	// if screen is smaller than 600px
+    $('.slide').removeClass('not-fullscreen');
+    $('.slide').addClass('fullscreen');
+}
+
+// Add listener to change halfscreen to fullscreen on mobile
+mql.addListener(function(changed) {
+    if(changed.matches) {
+	    // if screen is larger than 600px
+	    $('.slide').removeClass('fullscreen');
+	    $('.slide').addClass('not-fullscreen');
+    } else {
+	    // if screen is smaller than 600px
+	    $('.slide').removeClass('not-fullscreen');
+	    $('.slide').addClass('fullscreen');
+    }
+});
+
+
 /* fix vertical when not overflow
 call fullscreenFix() if .fullscreen content changes */
 function fullscreenFix(){
@@ -51,3 +79,21 @@ function backgroundResize(){
 $(window).resize(backgroundResize);
 $(window).focus(backgroundResize);
 backgroundResize();
+
+
+
+// Toggle 3D view
+ $('.js-view-btn').click(function(e){
+	e.preventDefault();
+	$('.featured-thumbnail').toggle();
+	$('.model').toggle();
+	var element = document.getElementById("js-view-btn");
+	element.innerHTML = "Switch view";
+ });
+
+
+
+
+
+
+

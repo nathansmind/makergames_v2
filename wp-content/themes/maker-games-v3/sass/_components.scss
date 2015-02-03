@@ -15,15 +15,16 @@
 	text-align: center;
 	transition: background-color 300ms ease-out;
 	font-weight: bold;
-	&:hover {
+	&:hover, &:active  {
 		color: $white;
 		background-color: $primary-dark;
 	}
 	&.disabled {}
-	&.secondary {background: $gray-dark; &:hover {background: $gray-darkest;}}
+	&.secondary {background: $gray-dark; color: $white; &:hover {background: $gray-darkest; color: $white;}}
 	&.success {background: $secondary; &:hover {background: $secondary-dark;}}
 	&.expand {width: 100%;}
 	&.outline {background: rgba(255, 255, 255, 0); border: 1px solid $white; &:hover {background-color: $primary-dark;}}
+	&.outline-dark {background: rgba(255, 255, 255, 0); border: 1px solid $black; color: $black; &:hover {background-color: $gray-light;}}
 }
 
 // Header 

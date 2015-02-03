@@ -1858,12 +1858,12 @@ button, .button {
   padding-left: 2rem;
   font-size: 1rem;
   background-color: #2ba6cb;
-  border-color: #2285a2;
+  border-color: #ef4c22;
   color: #FFFFFF;
   transition: background-color 300ms ease-out; }
 
 button:hover, button:focus, .button:hover, .button:focus {
-  background-color: #2285a2; }
+  background-color: #ef4c22; }
 
 button:hover, button:focus, .button:hover, .button:focus {
   color: #FFFFFF; }
@@ -1965,14 +1965,14 @@ button.round, .button.round {
 
 button.disabled, button[disabled], .button.disabled, .button[disabled] {
   background-color: #2ba6cb;
-  border-color: #2285a2;
+  border-color: #ef4c22;
   color: #FFFFFF;
   cursor: default;
   opacity: 0.7;
   box-shadow: none; }
 
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #2285a2; }
+  background-color: #ef4c22; }
 
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
   color: #FFFFFF; }
@@ -2618,11 +2618,11 @@ meta.foundation-mq-topbar {
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
   background-color: #2ba6cb;
-  border-color: #2285a2;
+  border-color: #ef4c22;
   color: #FFFFFF; }
 
 .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
-  background-color: #2285a2; }
+  background-color: #ef4c22; }
 
 .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
   color: #FFFFFF; }
@@ -2676,11 +2676,11 @@ meta.foundation-mq-topbar {
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
   background-color: #2ba6cb;
-  border-color: #2285a2;
+  border-color: #ef4c22;
   color: #FFFFFF; }
 
 .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
-  background-color: #2285a2; }
+  background-color: #ef4c22; }
 
 .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
   color: #FFFFFF; }
@@ -3292,13 +3292,15 @@ blockquote, blockquote p {
   text-align: center;
   transition: background-color 300ms ease-out;
   font-weight: bold; }
-  .button:hover {
+  .button:hover, .button:active {
     color: #fff;
     background-color: #cc350f; }
   .button.secondary {
-    background: #555; }
+    background: #555;
+    color: #fff; }
     .button.secondary:hover {
-      background: #333; }
+      background: #333;
+      color: #fff; }
   .button.success {
     background: #809dae; }
     .button.success:hover {
@@ -3310,6 +3312,12 @@ blockquote, blockquote p {
     border: 1px solid #fff; }
     .button.outline:hover {
       background-color: #cc350f; }
+  .button.outline-dark {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #222;
+    color: #222; }
+    .button.outline-dark:hover {
+      background-color: #f2f2f2; }
 
 .text-logo img {
   width: 30px;
@@ -3414,32 +3422,21 @@ article {
     padding-bottom: 0.9375em;
     padding-top: 0.9375em;
     border-bottom: 2px solid #ccc; }
+    .post-single .postInfo .date {
+      color: #222; }
+    .post-single .postInfo .post-excerpt a, .post-single .postInfo .post-excerpt p {
+      color: #222;
+      font-style: normal !important; }
+    .post-single .postInfo .read-more {
+      color: #ef4c22 !important; }
+      .post-single .postInfo .read-more:hover {
+        color: #cc350f !important; }
     .post-single .postInfo h2 {
       color: #222; }
     .post-single .postInfo p {
       margin-bottom: 0;
       font-style: italic;
       font-size: 0.8125; }
-
-@media only screen and (min-width: 40.063em) {
-  .post-single {
-    position: relative;
-    margin-bottom: 1.6em !important; }
-    .post-single .postInfo {
-      background: rgba(255, 255, 255, 0);
-      position: absolute;
-      bottom: 0;
-      color: #fff;
-      padding-bottom: 0.9375em;
-      padding-top: 0;
-      border-bottom: none; }
-      .post-single .postInfo h2 {
-        color: #fff; }
-      .post-single .postInfo p {
-        margin-bottom: 0;
-        font-style: italic;
-        font-size: 0.8125; }
- }
 
 .post-date {
   font-style: italic; }
@@ -3505,31 +3502,83 @@ article {
 .slide.gray-slide {
   background: #f2f2f2; }
 
-.single-3dprinters article h1 {
-  font-size: 1.6875rem; }
+.post-type-archive-download h1 {
+  margin-bottom: 1.625rem; }
 
-.single-3dprinters .carousel ul {
-  margin: 0; }
+.download-tile {
+  background: #fdfdfd;
+  transition: background 300ms ease;
+  padding: 0.625rem !important;
+  margin-bottom: 0.625rem !important; }
+  .download-tile:hover {
+    background: #f2f2f2; }
+  .download-tile .name {
+    margin-top: 0.625rem;
+    text-align: center; }
+  .download-tile .game {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.625;
+    margin-bottom: 0;
+    text-transform: inherit !important;
+    height: 52px;
+    overflow: hidden;
+    text-align: center; }
 
-.printer-tile {
-  border: 1px solid #f2f2f2;
-  padding-top: 10px;
-  transition: border 600ms ease; }
+.download-title {
+  padding-top: 2.7em; }
 
-.printer-tile:hover {
-  border: 1px solid #999; }
+.coming-soon {
+  height: 380px !important;
+  text-align: center;
+  padding: 0.9375em; }
+  .coming-soon h4 {
+    margin-top: 30%; }
 
-.printer-tile p a {
-  color: #000; }
+.download-content {
+  padding-top: 2.7em; }
 
-.printer-tile p {
-  color: #000; }
+.download-image {
+  padding-top: 0;
+  position: relative; }
+  .download-image .view-btn {
+    display: none; }
+  .download-image .featured-thumbnail {
+    position: relative; }
+  .download-image .model {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 95%;
+    margin-left: 0.9375em;
+    margin-right: 0.9375em;
+    background: #fdfdfd;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38383f', endColorstr='#000000',GradientType=0 );
+    /* IE6-9 */ }
+    .download-image .model div {
+      margin: 0 auto; }
+      .download-image .model div canvas {
+        border: none !important; }
 
-.printer-tile h4 {
-  color: #ef4c22; }
+.featured-thumbnail {
+  display: block; }
 
-.printer-tile .read-more {
+.model {
   display: none; }
+
+@media only screen and (min-width: 40.063em) {
+  .view-btn {
+    position: absolute;
+    top: 56px;
+    left: 27px; }
+
+  .download-image {
+    padding-top: 2.7em; }
+
+  .download-content {
+    padding-top: 0; }
+ }
 
 .fullscreen, .content-a {
   width: 100%;

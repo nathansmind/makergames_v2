@@ -2756,14 +2756,14 @@ button, .button {
   padding-left: 2rem;
   font-size: 1rem;
   background-color: #2ba6cb;
-  border-color: #2285a2;
+  border-color: #ef4c22;
   color: #FFFFFF;
   transition: background-color 300ms ease-out;
 }
 
 /* line 1470, sass/_foundation.scss */
 button:hover, button:focus, .button:hover, .button:focus {
-  background-color: #2285a2;
+  background-color: #ef4c22;
 }
 
 /* line 1472, sass/_foundation.scss */
@@ -2915,7 +2915,7 @@ button.round, .button.round {
 /* line 1546, sass/_foundation.scss */
 button.disabled, button[disabled], .button.disabled, .button[disabled] {
   background-color: #2ba6cb;
-  border-color: #2285a2;
+  border-color: #ef4c22;
   color: #FFFFFF;
   cursor: default;
   opacity: 0.7;
@@ -2924,7 +2924,7 @@ button.disabled, button[disabled], .button.disabled, .button[disabled] {
 
 /* line 1553, sass/_foundation.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #2285a2;
+  background-color: #ef4c22;
 }
 
 /* line 1555, sass/_foundation.scss */
@@ -3826,13 +3826,13 @@ meta.foundation-mq-topbar {
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
   background-color: #2ba6cb;
-  border-color: #2285a2;
+  border-color: #ef4c22;
   color: #FFFFFF;
 }
 
 /* line 2143, sass/_foundation.scss */
 .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
-  background-color: #2285a2;
+  background-color: #ef4c22;
 }
 
 /* line 2145, sass/_foundation.scss */
@@ -3914,13 +3914,13 @@ meta.foundation-mq-topbar {
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
   background-color: #2ba6cb;
-  border-color: #2285a2;
+  border-color: #ef4c22;
   color: #FFFFFF;
 }
 
 /* line 2186, sass/_foundation.scss */
 .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
-  background-color: #2285a2;
+  background-color: #ef4c22;
 }
 
 /* line 2188, sass/_foundation.scss */
@@ -4800,17 +4800,19 @@ blockquote p {
   font-weight: bold;
 }
 /* line 18, sass/_components.scss */
-.button:hover {
+.button:hover, .button:active {
   color: white;
   background-color: #cc350f;
 }
 /* line 23, sass/_components.scss */
 .button.secondary {
   background: #555555;
+  color: white;
 }
 /* line 23, sass/_components.scss */
 .button.secondary:hover {
   background: #333333;
+  color: white;
 }
 /* line 24, sass/_components.scss */
 .button.success {
@@ -4833,15 +4835,25 @@ blockquote p {
 .button.outline:hover {
   background-color: #cc350f;
 }
+/* line 27, sass/_components.scss */
+.button.outline-dark {
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #222222;
+  color: #222222;
+}
+/* line 27, sass/_components.scss */
+.button.outline-dark:hover {
+  background-color: #f2f2f2;
+}
 
-/* line 31, sass/_components.scss */
+/* line 32, sass/_components.scss */
 .text-logo img {
   width: 30px;
   float: left;
   margin: 7px 7px 0 10px;
 }
 
-/* line 32, sass/_components.scss */
+/* line 33, sass/_components.scss */
 .text-logo h1 {
   color: #fff;
   float: left;
@@ -4851,30 +4863,30 @@ blockquote p {
   font-weight: bold;
 }
 
-/* line 33, sass/_components.scss */
+/* line 34, sass/_components.scss */
 .top-bar-section ul {
   float: right;
 }
 
-/* line 34, sass/_components.scss */
+/* line 35, sass/_components.scss */
 #menu-main-nav ul li a {
   font-weight: bold !important;
 }
 
-/* line 39, sass/_components.scss */
+/* line 40, sass/_components.scss */
 footer {
   background: #f2f2f2;
   padding-top: 1.625em;
   margin-top: 3.25em;
   border-top: 2px solid #cccccc;
 }
-/* line 44, sass/_components.scss */
+/* line 45, sass/_components.scss */
 footer ul {
   list-style: none;
   margin: 0;
   margin-bottom: 1.625em;
 }
-/* line 49, sass/_components.scss */
+/* line 50, sass/_components.scss */
 footer p {
   margin-bottom: 0;
   font-size: .8125em;
@@ -4886,41 +4898,41 @@ footer p {
   text-align: center;
 }
 
-/* line 63, sass/_components.scss */
+/* line 64, sass/_components.scss */
 #sidebar {
   margin-top: 2.7em;
   padding-left: 1.8em;
   border-left: 1px solid #ccc;
 }
-/* line 67, sass/_components.scss */
+/* line 68, sass/_components.scss */
 #sidebar h3 {
   font-size: 1.2rem;
   line-height: 1.525em;
 }
-/* line 71, sass/_components.scss */
+/* line 72, sass/_components.scss */
 #sidebar div:first-child ul {
   margin: 0;
 }
-/* line 73, sass/_components.scss */
+/* line 74, sass/_components.scss */
 #sidebar div:first-child ul ul {
   list-style: none;
   margin: 0;
 }
-/* line 76, sass/_components.scss */
+/* line 77, sass/_components.scss */
 #sidebar div:first-child ul ul li {
   margin-bottom: .406rem;
 }
-/* line 78, sass/_components.scss */
+/* line 79, sass/_components.scss */
 #sidebar div:first-child ul ul li:first-child {
   margin-top: 0.406rem;
 }
-/* line 84, sass/_components.scss */
+/* line 85, sass/_components.scss */
 #sidebar div:nth-child(2) ul {
   padding-top: 1.625em;
   padding-bottom: .8125em;
   margin: 0;
 }
-/* line 88, sass/_components.scss */
+/* line 89, sass/_components.scss */
 #sidebar div:nth-child(2) ul p {
   margin-bottom: .8125em;
 }
@@ -4986,87 +4998,77 @@ article .featured-thumbnail {
   border-bottom: 2px solid #ccc;
 }
 /* line 47, sass/_main.scss */
-.post-single .postInfo h2 {
+.post-single .postInfo .date {
   color: #222222;
 }
 /* line 50, sass/_main.scss */
+.post-single .postInfo .post-excerpt a, .post-single .postInfo .post-excerpt p {
+  color: #222222;
+  font-style: normal !important;
+}
+/* line 54, sass/_main.scss */
+.post-single .postInfo .read-more {
+  color: #ef4c22 !important;
+}
+/* line 56, sass/_main.scss */
+.post-single .postInfo .read-more:hover {
+  color: #cc350f !important;
+}
+/* line 58, sass/_main.scss */
+.post-single .postInfo h2 {
+  color: #222222;
+}
+/* line 61, sass/_main.scss */
 .post-single .postInfo p {
   margin-bottom: 0;
   font-style: italic;
   font-size: .8125;
 }
 
-@media only screen and (min-width: 40.063em) {
-  /* line 59, sass/_main.scss */
-  .post-single {
-    position: relative;
-    margin-bottom: 1.6em !important;
-  }
-  /* line 62, sass/_main.scss */
-  .post-single .postInfo {
-    background: rgba(255, 255, 255, 0);
-    position: absolute;
-    bottom: 0;
-    color: white;
-    padding-bottom: .9375em;
-    padding-top: 0;
-    border-bottom: none;
-  }
-  /* line 70, sass/_main.scss */
-  .post-single .postInfo h2 {
-    color: white;
-  }
-  /* line 73, sass/_main.scss */
-  .post-single .postInfo p {
-    margin-bottom: 0;
-    font-style: italic;
-    font-size: .8125;
-  }
-}
-/* line 83, sass/_main.scss */
+/* line 74, sass/_main.scss */
 .post-date {
   font-style: italic;
 }
 
-/* line 84, sass/_main.scss */
+/* line 75, sass/_main.scss */
 .newer-older p {
   margin-bottom: 0;
 }
 
-/* line 89, sass/_main.scss */
+/* line 80, sass/_main.scss */
 #comments h5 {
   margin-bottom: .8125em;
 }
-/* line 92, sass/_main.scss */
+/* line 83, sass/_main.scss */
 #comments textarea {
   width: 100%;
   height: 80px;
 }
-/* line 96, sass/_main.scss */
+/* line 87, sass/_main.scss */
 #comments .will-not {
   font-size: 0.889em;
   font-style: italic;
 }
-/* line 100, sass/_main.scss */
+/* line 91, sass/_main.scss */
 #comments input[type="text"] {
   width: 100%;
 }
-/* line 103, sass/_main.scss */
+/* line 94, sass/_main.scss */
 #comments p {
   margin-bottom: .8125em;
 }
-/* line 106, sass/_main.scss */
+/* line 97, sass/_main.scss */
 #comments ol {
   margin: 0;
   list-style: none;
 }
-/* line 110, sass/_main.scss */
+/* line 101, sass/_main.scss */
 #comments .comment {
   padding: 1.625rem;
   background: #f2f2f2;
   margin-bottom: 1.625rem;
 }
-/* line 114, sass/_main.scss */
+/* line 105, sass/_main.scss */
 #comments .comment .thanks {
   color: #809dae;
   border: 2px solid #809DAE;
@@ -5075,46 +5077,46 @@ article .featured-thumbnail {
   float: left;
   margin-bottom: 1.625em;
 }
-/* line 122, sass/_main.scss */
+/* line 113, sass/_main.scss */
 #comments .comment .name {
   margin-bottom: 0;
   margin-top: 6px;
   display: block;
 }
-/* line 123, sass/_main.scss */
+/* line 114, sass/_main.scss */
 #comments .comment .gravatar {
   float: left;
   margin-right: .8125rem;
 }
-/* line 124, sass/_main.scss */
+/* line 115, sass/_main.scss */
 #comments .comment .comment-meta {
   float: left;
   width: 100%;
 }
-/* line 125, sass/_main.scss */
+/* line 116, sass/_main.scss */
 #comments .comment .comment-text {
   padding-left: 3em;
 }
-/* line 127, sass/_main.scss */
+/* line 118, sass/_main.scss */
 #comments .comment .comment-text p {
   float: left;
   width: 100%;
 }
 
-/* line 138, sass/_main.scss */
+/* line 129, sass/_main.scss */
 .home-hero {
   background: #ef4c22;
 }
-/* line 140, sass/_main.scss */
+/* line 131, sass/_main.scss */
 .home-hero h2, .home-hero h6 {
   color: white;
 }
-/* line 141, sass/_main.scss */
+/* line 132, sass/_main.scss */
 .home-hero .button {
   margin-top: 1.6rem;
 }
 
-/* line 144, sass/_main.scss */
+/* line 135, sass/_main.scss */
 .slide p {
   display: block;
   padding-bottom: 1.625em;
@@ -5122,53 +5124,128 @@ article .featured-thumbnail {
   width: 85%;
   max-width: 700px;
 }
-/* line 151, sass/_main.scss */
+/* line 142, sass/_main.scss */
 .slide.gray-slide {
   background: #f2f2f2;
 }
 
-/* line 156, sass/_main.scss */
-.single-3dprinters article h1 {
-  font-size: 1.6875rem;
+/* line 150, sass/_main.scss */
+.post-type-archive-download h1 {
+  margin-bottom: 1.625rem;
 }
 
-/* line 157, sass/_main.scss */
-.single-3dprinters .carousel ul {
-  margin: 0;
+/* line 155, sass/_main.scss */
+.download-tile {
+  background: #fdfdfd;
+  transition: background 300ms ease;
+  padding: 0.625rem !important;
+  margin-bottom: 0.625rem !important;
 }
-
-/* line 158, sass/_main.scss */
-.printer-tile {
-  border: 1px solid #f2f2f2;
-  padding-top: 10px;
-  transition: border 600ms ease;
-}
-
-/* line 159, sass/_main.scss */
-.printer-tile:hover {
-  border: 1px solid #999;
-}
-
 /* line 160, sass/_main.scss */
-.printer-tile p a {
-  color: #000;
+.download-tile:hover {
+  background: #f2f2f2;
 }
-
 /* line 161, sass/_main.scss */
-.printer-tile p {
-  color: #000;
+.download-tile .name {
+  margin-top: 0.625rem;
+  text-align: center;
+}
+/* line 165, sass/_main.scss */
+.download-tile .game {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.625;
+  margin-bottom: 0;
+  text-transform: inherit !important;
+  height: 52px;
+  overflow: hidden;
+  text-align: center;
 }
 
-/* line 162, sass/_main.scss */
-.printer-tile h4 {
-  color: #ef4c22;
+/* line 179, sass/_main.scss */
+.download-title {
+  padding-top: 2.7em;
 }
 
-/* line 163, sass/_main.scss */
-.printer-tile .read-more {
+/* line 182, sass/_main.scss */
+.coming-soon {
+  height: 380px !important;
+  text-align: center;
+  padding: 0.9375em;
+}
+/* line 186, sass/_main.scss */
+.coming-soon h4 {
+  margin-top: 30%;
+}
+
+/* line 190, sass/_main.scss */
+.download-content {
+  padding-top: 2.7em;
+}
+
+/* line 191, sass/_main.scss */
+.download-image {
+  padding-top: 0;
+  position: relative;
+}
+/* line 194, sass/_main.scss */
+.download-image .view-btn {
+  display: none;
+}
+/* line 197, sass/_main.scss */
+.download-image .featured-thumbnail {
+  position: relative;
+}
+/* line 200, sass/_main.scss */
+.download-image .model {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 95%;
+  margin-left: 0.9375em;
+  margin-right: 0.9375em;
+  background: #fdfdfd;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#38383f', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+}
+/* line 209, sass/_main.scss */
+.download-image .model div {
+  margin: 0 auto;
+}
+/* line 211, sass/_main.scss */
+.download-image .model div canvas {
+  border: none !important;
+}
+
+/* line 217, sass/_main.scss */
+.featured-thumbnail {
+  display: block;
+}
+
+/* line 218, sass/_main.scss */
+.model {
   display: none;
 }
 
+@media only screen and (min-width: 40.063em) {
+  /* line 222, sass/_main.scss */
+  .view-btn {
+    position: absolute;
+    top: 56px;
+    left: 27px;
+  }
+
+  /* line 228, sass/_main.scss */
+  .download-image {
+    padding-top: 2.7em;
+  }
+
+  /* line 231, sass/_main.scss */
+  .download-content {
+    padding-top: 0;
+  }
+}
 /* line 2, sass/vendor/_fullscreen.scss */
 .fullscreen, .content-a {
   width: 100%;
